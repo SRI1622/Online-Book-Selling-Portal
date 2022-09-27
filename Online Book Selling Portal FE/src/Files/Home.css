@@ -1,0 +1,21 @@
+.bgimage {
+   /* background-image:url("./Images/capture.png");*/
+     background-repeat: no-repeat;
+     height: max-content;
+
+}
+img{
+     height:20px;
+}
+.text-centertext-info {
+     text-align: center;
+     margin-top: 40px;
+     color:#53C2BC;
+
+}
+
+.btn{
+     color:black;
+     background-color: #53C2BC;
+     
+}

@@ -1,0 +1,158 @@
+.navbar {
+  background-color: #53C2BC;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  /* position: fixed; */
+
+
+
+}
+
+
+.search {
+  border-radius: 100px;
+  margin-top: 8px;
+  margin-right: 150px;
+  text-align: center;
+  /* float: none; */
+  display: block;
+
+}
+
+.search1 {
+  height: 35px;
+  width: 300px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.nav-logo:hover {
+  text-decoration: none;
+}
+
+.nav-logo {
+  color: #FF0303;
+
+  margin-left: 50px;
+  margin-top: -19px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  width: 50px;
+  height:50px ; 
+  }
+ 
+.nav-menu {
+
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  text-align: center;
+  justify-content: end;
+  width: 80vw;
+  list-style: none;
+
+
+}
+
+.nav-links {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  justify-content: end;
+  display: grid;
+  grid-gap: 10px;
+  width: 10vw;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav-links:hover {
+  background-color: aliceblue;
+  border-radius: 3px;
+  transition: all .2s ease-out;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width:960px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    color: aliceblue;
+    transform: translate(-100%, 55%);
+    cursor: pointer;
+  }
+
+  .nav-menu.active {
+    background-color: aquamarine;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 10vh;
+    left: 100%;
+    transition: all .4s ease;
+    overflow: auto;
+    opacity: 0;
+
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 1rem;
+    display: table;
+    width: 100%;
+  }
+
+  .nav-links:hover {
+    background-color: antiquewhite;
+    border-radius: 0;
+    color: aliceblue;
+  }
+
+  .nav-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    margin-left: 0;
+    border: 3px;
+    object-fit: 50%; 
+    width:300px;
+    height: 337px;
+  }
+}
+
+.logo{
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 220%; 
+  margin: 0 0 0 40%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
